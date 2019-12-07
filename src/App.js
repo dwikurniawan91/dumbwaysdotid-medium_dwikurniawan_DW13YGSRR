@@ -1,14 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Home from './Home'
+import Register from './Register'
 
 const App = () => {
   return(
-    <div>
-      <BrowserRouter>
-      
-      </BrowserRouter>
-    </div>
+    <Register />
   );
 };
 export default App;
