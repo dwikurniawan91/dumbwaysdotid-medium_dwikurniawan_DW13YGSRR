@@ -5,13 +5,15 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
 import FormRegister from "./FormRegister";
-
+import Login from "./Login";
 const useStyles = makeStyles(theme => ({
   modal: {
+    margin: "0",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    textAlign: "center"
+    textAlign: "center",
+    padding: "0"
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
@@ -41,7 +43,7 @@ export default function TransitionsModal() {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleOpen}>
+      <Button style={{backgroundColor: "black", color: "white"}} variant="contained" color="primary" onClick={handleOpen}>
         Get Started
       </Button>
 
@@ -77,13 +79,21 @@ export default function TransitionsModal() {
               <FormRegister />
               <p>
                 <b>
-                  Already have an account?<a href="url"> Sign in</a>
+                  Already have an account?<a href="url"> <Login /></a>
                 </b>
               </p>
               <p>
                 To make Medium work, we log user data and share it with service
                 providers. Click " Sign Up" above to accept ,
-                <u>Medium's Term of Service & Privacy Policy.</u>{" "}
+                <a style={{ color: "black" }} href="url">
+                  
+                  <u>Medium's Term of Service.</u>
+                </a>
+                &
+                <a style={{ color: "black" }} href="url">
+                  
+                  <u>Privacy Policy.</u>
+                </a>
               </p>
             </div>
 

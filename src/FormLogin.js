@@ -17,11 +17,10 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="standard-basic" label="Your Name" variant="standard" />
-      <TextField id="standard-basic" label="Your Password" variant="standard" />
-      <TextField id="standard-basic" label="Your Email" variant="standard" />
+      <TextField style={{margin: "30px"}} id="standard-basic" label="Your Email" variant="standard" />
+      <TextField style={{margin: "30px"}} id="standard-basic" label="Your Password" variant="standard" />
 
-      <Button
+      <Button style={{margin: "30px"}}
         style={{
           backgroundColor: "black",
           color: "white",
@@ -31,7 +30,7 @@ export default function BasicTextFields() {
         }}
         color="primary"
       >
-        Registration
+        Continue
       </Button>
     </form>
   );
