@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -47,7 +48,16 @@ export default function TransitionsModal() {
   return (
     <div>
       <Button
-        style={{ backgroundColor: "black", color: "white" }}
+        style={{
+          height: "35px",
+          backgroundColor: "white",
+          color: "black",
+          marginTop: "4px",
+          marginLeft: "12px",
+          marginRight: "12px",
+          border: "1px solid black",
+          borderRadius: "6px"
+        }}
         variant="contained"
         color="primary"
         onClick={handleOpen}
@@ -79,7 +89,7 @@ export default function TransitionsModal() {
               <FormLogin />
               <p>
                 <ArrowBackIosIcon fontSize="inherit" color="primary" />
-                <a href="url">All sign in options</a>
+                <a  href="url">All sign in options</a>
               </p>
             </div>
           </div>

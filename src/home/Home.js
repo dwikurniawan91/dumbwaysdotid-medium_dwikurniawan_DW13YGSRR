@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-
-
+import Navbar from "../navbar/Navbar";
+import Category from "../category/Category";
+import Content from "./Content";
 
 
 const Home = () => {
@@ -10,6 +10,10 @@ const Home = () => {
       {/* <Register /> */}
       {/* <Login /> */}
       <Navbar />
+      <Category />
+      <Content />
+      
+      
     </div>
   );
 };

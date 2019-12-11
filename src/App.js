@@ -1,8 +1,7 @@
 import React from "react";
-import Register from "./Register";
-import Login from "./Login";
-import Home from "./Home";
-
+// import Register from "./register/Register";
+// import Login from "./login/Login";
+import Home from "./home/Home";
 
 const App = () => {
   return (
