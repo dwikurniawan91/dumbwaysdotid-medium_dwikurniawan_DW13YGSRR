@@ -20,7 +20,7 @@ export default function BasicTextFields() {
       <TextField style={{margin: "30px"}} id="standard-basic" label="Your Email" variant="standard" />
       <TextField style={{margin: "30px"}} id="standard-basic" label="Your Password" variant="standard" />
 
-      <Button style={{margin: "30px"}}
+      <Button 
         style={{
           backgroundColor: "black",
           color: "white",
