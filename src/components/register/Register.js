@@ -5,7 +5,9 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
 import FormRegister from "./FormRegister";
-import Login from "./Login";
+import Login from "../navbar/Login";
+
+
 const useStyles = makeStyles(theme => ({
   modal: {
     margin: "0",
@@ -43,7 +45,7 @@ export default function TransitionsModal() {
 
   return (
     <div>
-      <Button style={{backgroundColor: "black", color: "white"}} variant="contained" color="primary" onClick={handleOpen}>
+      <Button style={{backgroundColor: "black", color: "white", margin:"4px"}} variant="contained" color="primary" onClick={handleOpen}>
         Get Started
       </Button>
 
@@ -79,7 +81,7 @@ export default function TransitionsModal() {
               <FormRegister />
               <p>
                 <b>
-                  Already have an account?<a href="url"> <Login /></a>
+                  Already have an account?<a href="#"><Login /></a>
                 </b>
               </p>
               <p>

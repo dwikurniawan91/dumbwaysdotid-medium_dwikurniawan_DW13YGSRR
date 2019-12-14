@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import FormLogin from "./FormLogin";
 // import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -89,7 +90,7 @@ export default function TransitionsModal() {
               <FormLogin />
               <p>
                 <ArrowBackIosIcon fontSize="inherit" color="primary" />
-                <a  href="url">All sign in options</a>
+                <Link to="/Register">All sign in options</Link>>
               </p>
             </div>
           </div>

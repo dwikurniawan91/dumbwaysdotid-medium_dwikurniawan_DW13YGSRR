@@ -1,3 +1,5 @@
+
+import Avatar from "@material-ui/core/Avatar";
 import React from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -13,6 +15,10 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import Typography from "@material-ui/core/Typography";
 import Register from "../register/Register";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+
+
 const useStyles = makeStyles(theme => ({
   grow: {
     flexGrow: 1,
@@ -60,19 +66,12 @@ const useStyles = makeStyles(theme => ({
   inputRoot: {
     color: "inherit"
   },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 7),
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: 200
-    }
-  },
+  
   sectionDesktop: {
     display: "none",
     [theme.breakpoints.up("md")]: {
       display: "flex",
-      marginRight: 150,
+      marginRight: 50,
       marginTop: "12px"
     }
   },
@@ -173,7 +172,16 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
           ></IconButton>
           <Typography variant="h5" component="h5">
-            <b>Medium</b>
+          <Link to='/'>
+          <div className={classes.root}>
+            <Avatar
+              alt="medium"
+              src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Medium3_svg-512.png"
+              className={classes.bigAvatar}
+              variant="square"
+            />
+          </div>
+          </Link>
           </Typography>
 
           <div className={classes.grow} />
@@ -218,3 +226,10 @@ export default function PrimarySearchAppBar() {
     </div>
   );
 }
+
+
+
+
+
+
+        

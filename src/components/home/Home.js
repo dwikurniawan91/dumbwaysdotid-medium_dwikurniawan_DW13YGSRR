@@ -1,19 +1,16 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import Category from "../category/Category";
 import Content from "./Content";
+import Navbar from "../navbar/Navbar";
+
 
 
 const Home = () => {
   return (
     <div>
-      {/* <Register /> */}
-      {/* <Login /> */}
       <Navbar />
       <Category />
-      <Content />
-      
-      
+      <Content /> 
     </div>
   );
 };

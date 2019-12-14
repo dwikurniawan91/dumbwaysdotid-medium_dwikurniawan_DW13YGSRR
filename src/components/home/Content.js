@@ -4,8 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import HighlightMid from "./HighlightMid";
 import Divider from "@material-ui/core/Divider";
 import Content2 from "./Content2";
@@ -43,14 +41,18 @@ export default function FullWidthGrid() {
             height: "50vh"
           }}
         >
-          <Grid container spacing={3} style={{
-                    // backgroundColor: "#cfe8fc",
-                    height: '50%'
-                }} >
+          <Grid
+            container
+            spacing={3}
+            style={{
+              // backgroundColor: "#cfe8fc",
+              height: "50%"
+            }}
+          >
             <Grid item xs={6} sm={4}>
               <div
                 style={{
-                    // backgroundColor: "#cfe8fc",
+                  // backgroundColor: "#cfe8fc",
                   height: "25vh"
                 }}
               >
@@ -156,19 +158,21 @@ export default function FullWidthGrid() {
                   style={{
                     color: "green",
                     marginTop: "25vh",
-                    marginLeft: "15vh",
-                    
+                    marginLeft: "15vh"
                   }}
                 >
                   <a href="url">SEE ALL FEATURED</a>
                 </Typography>
               </Grid>
             </Grid>
-            <Container style={{ backgroundColor: "grey", marginTop: "1vh",width: "180vh" }}>
-              <Divider
-                orientation="horizontal"
-                style={{ }}
-              />
+            <Container
+              style={{
+                backgroundColor: "grey",
+                marginTop: "1vh",
+                width: "180vh"
+              }}
+            >
+              <Divider orientation="horizontal" style={{}} />
             </Container>
             <Content2 />
           </Grid>

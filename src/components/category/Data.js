@@ -1,51 +1,66 @@
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 const Data = [
   {
     id: 1,
-    name: "HOME"
+    name: "HOME",
+    url:"/"
   },
   {
     id: 2,
-    name: "ONEZERO"
+    name: "ONEZERO",
+    url:"/categoryPage"
   },
   {
     id: 3,
-    name: "ELEMENTAL"
+    name: "ELEMENTAL",
+    url: "/"
   },
   {
     id: 4,
-    name: "GEN"
+    name: "GEN",
+    url: "/"
   },
   {
     id: 5,
-    name: "ZORA"
+    name: "ZORA",
+    url: "/"
   },
   {
     id: 6,
-    name: "FORGE"
+    name: "FORGE",
+    url: "/"
   },
   {
     id: 7,
-    name: "HUMAN PARTS"
+    name: "HUMAN PARTS",
+    url: "/"
   },
   {
     id: 8,
-    name: "MARKER"
+    name: "MARKER",
+    url: "/"
   },
   {
     id: 9,
-    name: "LEVEL"
+    name: "LEVEL",
+    url: "/"
   },
   {
     id: 10,
-    name: "HEATED"
+    name: "HEATED",
+    url: "/"
   },
   {
     id: 11,
-    name: "MODUS"
+    name: "MODUS",
+    url: "/"
   },
   {
     id: 12,
-    name: "MORE"
+    name: "MORE",
+    url: "/"
   },
 ]
 

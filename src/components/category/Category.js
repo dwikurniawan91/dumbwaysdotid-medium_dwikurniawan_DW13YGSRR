@@ -4,18 +4,18 @@ import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import CategoryProps from "./CategoryProps";
 import Data from "./Data";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
     width: 1200,
     display: "row",
     marginLeft: "auto",
-    marginRight: "auto",
-    
+    marginRight: "auto"
   },
-  butt:{
+  butt: {
     paddingLeft: 0,
-    paddingRight: 0,
+    paddingRight: 0
   }
 });
 export default function SimpleBottomNavigation() {
@@ -23,7 +23,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   const categoryMenu = Data.map(item => (
-    <CategoryProps key={item.id} Data={item} />
+    <CategoryProps key={item} Data={item} url={item} />
   ));
 
   return (
@@ -38,9 +38,10 @@ export default function SimpleBottomNavigation() {
       {categoryMenu.map((currElement, Index) => {
         return (
           <BottomNavigationAction
-          className={classes.butt}
+            className={classes.butt}
             label={currElement}
             key={Index}
+            onClick={currElement}
           ></BottomNavigationAction>
         );
       })}
